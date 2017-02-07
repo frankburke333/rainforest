@@ -12,6 +12,7 @@
     </div>
   <% end %>
 
+<div class="form">
 <%= link_to "Back to Products", products_url %>
 <%= form_for @product do |f| %>
   <p>
@@ -27,10 +28,10 @@
     <%= f.text_field :description %>
   </p>
 
-  <p>
+  <p class="button">
     <%= f.submit "Save" %>
   </p>
-
+</div>
   <% end %>
 
 <% end %>

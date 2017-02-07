@@ -4,15 +4,46 @@ font-family: 'Carter One', helvetica;
 
 body {
   background-color: #dcdce8;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 h1 {
-  background-color: orange;
+  background: url(https://upload.wikimedia.org/wikipedia/commons/c/c7/Jyv%C3%A4skyl%C3%A4_-_Sepp%C3%A4l%C3%A4_flea_market_2.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   text-align: center;
   color: white;
+  border: solid 2px black;
+  padding: 60px;
+  font-size: 60px;
+
 }
 
-a {
-  font-size: 18px;
-  
+.new_product {
+  display: block;
+}
+
+.products {
+  border: solid 1px black;
+  display: inline-block;
+  width: 30%;
+  background-color: white;
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.products h2 {
+  text-decoration: underline;;
+}
+
+.form p {
+  font-size: 20px;
+}
+
+input {
+  padding: 5px;
 }

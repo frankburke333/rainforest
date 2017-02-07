@@ -1,12 +1,13 @@
-<h1>Mad Products Yo</h1>
+<h2>Mad Products Yo</h2>
 
-<%= link_to "Add New Product", new_product_path %>
-
-<% @products.each do |product| %>
-
-  <h2><%= product.name %></h2>
-  <p><%= product.formatted_price %></p>
-  <p><%= product.description %></p>
-  <%= link_to product.name, product_path(product)%>
-
+<div class="new_product">
+  <%= link_to "Add New Product", new_product_path %>
+</div>
+  <% @products.each do |product| %>
+    <div class="products">
+    <h2><%= product.name %></h2>
+    <p><%= product.formatted_price %></p>
+    <p><%= product.description %></p>
+    <%= link_to "Details", product_path(product)%>
+  </div>
 <% end %>
