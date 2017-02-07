@@ -1,0 +1,18 @@
+html {
+font-family: 'Carter One', helvetica;
+}
+
+body {
+  background-color: #dcdce8;
+}
+
+h1 {
+  background-color: orange;
+  text-align: center;
+  color: white;
+}
+
+a {
+  font-size: 18px;
+  
+}

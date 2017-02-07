@@ -4,10 +4,9 @@
 
 <% @products.each do |product| %>
 
-<ul>
-  <li><%= product.name %></li>
-  <li><%= product.formatted_price %></li>
-  <li><%= product.description %></li>
-</ul>
+  <h2><%= product.name %></h2>
+  <p><%= product.formatted_price %></p>
+  <p><%= product.description %></p>
+  <%= link_to product.name, product_path(product)%>
 
 <% end %>
